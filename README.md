@@ -18,4 +18,4 @@ This is a test case for DB2 Internship v2.0.
 ## How can you see the application in action
 
 Runs the app in the development mode.\
-Open [https://xoxol4uk.github.io/todo-web-application/](deployed version) to view it in the browser.
+Open [deployed version](https://xoxol4uk.github.io/todo-web-application/) to view it in the browser.
