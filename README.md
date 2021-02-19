@@ -1,8 +1,8 @@
-# ToDo List web application
+# To Do List web application
 
 ## What is the project
 
-This is a simple to-do list that has the following functions:
+This is a simple app for create To Do list. It has the following functions:
 
 - adds tasks to the list;
 - highlights the task in color, depending on the priority;
