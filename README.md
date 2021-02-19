@@ -1,6 +1,4 @@
-# Why was this project created
-
-This is a test case for DB2 Internship v2.0.
+# ToDo List web application
 
 ## What is the project
 
@@ -11,6 +9,10 @@ This is a simple to-do list that has the following functions:
 - sorts tasks by priority level;
 - allows you to mark tasks as completed;
 - allows you to filter completed and uncompleted tasks.
+
+## Why was this project created
+
+This is a test case for DB2 Internship v2.0.
 
 
 ## How can you see the application in action
