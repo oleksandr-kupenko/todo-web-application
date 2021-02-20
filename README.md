@@ -2,7 +2,7 @@
 
 ## What is the project
 
-TThis is a simple app for creating To Do list. It has the following functions:
+This is a simple app for creating To Do list. It has the following functions:
 
 - adds tasks to the list;
 - highlights the task in color, depending on the priority;
