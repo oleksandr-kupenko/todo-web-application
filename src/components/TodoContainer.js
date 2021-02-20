@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import FilterSearch from "./FilterSearch";
-import TodoForm from "./TodoForm";
-import TodoList from "./TodoList";
+import React, { useState } from 'react';
+import FilterSearch from './FilterSearch';
+import TodoForm from './TodoForm';
+import TodoList from './TodoList';
 
 const TodoContainer = () => {
   const [todos, setTodos] = useState([]);
-  const [filterValue, setfilterValue] = useState("");
-  const [searchValue, setSearchValue] = useState("");
-  const [sorthValue, seteSortValue] = useState("");
+  const [filterValue, setfilterValue] = useState('');
+  const [searchValue, setSearchValue] = useState('');
+  const [sorthValue, seteSortValue] = useState('');
 
   const addTodo = (todoValue, priorityValue) => {
-    if (todoValue !== "") {
+    if (todoValue !== '') {
       let newTodo = {
         text: todoValue,
         id: Math.floor(Math.random() * 10000),
@@ -23,13 +23,13 @@ const TodoContainer = () => {
 
   const sortTodos = (todos) => {
     let todosSorted = [...todos];
-    if (sorthValue === "ascending") {
+    if (sorthValue === 'ascending') {
       todosSorted.sort((a, b) =>
         a.priority > b.priority ? 1 : b.priority > a.priority ? -1 : 0
       );
       return todosSorted;
     }
-    if (sorthValue === "descending") {
+    if (sorthValue === 'descending') {
       todosSorted.sort((a, b) =>
         a.priority < b.priority ? 1 : b.priority < a.priority ? -1 : 0
       );

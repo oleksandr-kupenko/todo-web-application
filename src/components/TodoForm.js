@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const TodoForm = ({ addTodo }) => {
-  const [todoValue, setTodoValue] = useState("");
+  const [todoValue, setTodoValue] = useState('');
   const [priorityValue, setPriorityValue] = useState(1);
 
   const handleChange = (e) => {
-    if (e.target.name === "textTodoInput") {
+    if (e.target.name === 'textTodoInput') {
       setTodoValue(e.target.value);
     }
-    if (e.target.name === "textPriorityInput") {
+    if (e.target.name === 'textPriorityInput') {
       setPriorityValue(e.target.value);
     }
   };
@@ -16,11 +16,11 @@ const TodoForm = ({ addTodo }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     addTodo(todoValue, priorityValue);
-    setTodoValue("");
+    setTodoValue('');
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       onSubmit(e);
     }
   };
