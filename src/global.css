@@ -82,6 +82,7 @@ body {
     padding: 16px;
     border-radius: 5px;
     width: 90%;
+    transition: 1.2s;
 }
 
 .theList {
@@ -231,6 +232,7 @@ body {
 .todoItemDone {
     background-color: rgb(195, 195, 195);
     color: #605d5d;
+    transition: 1.2s;
 }
 
 .nameTodoDone {
