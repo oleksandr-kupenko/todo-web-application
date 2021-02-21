@@ -27,17 +27,19 @@ const TodoForm = ({ addTodo }) => {
 
   return (
     <div className="todoForm">
-      <input
-        type="text"
-        name="textTodoInput"
-        placeholder="enter task"
-        onChange={handleChange}
-        value={todoValue}
-        onKeyDown={handleKeyDown}
-      />
-      <button className="todoButton" type="submit" onClick={onSubmit}>
-        add
-      </button>
+      <div className="inputContainer">
+        <input
+          type="text"
+          name="textTodoInput"
+          placeholder="enter task"
+          onChange={handleChange}
+          value={todoValue}
+          onKeyDown={handleKeyDown}
+        />
+        <button className="todoButton" type="submit" onClick={onSubmit}>
+          add
+        </button>
+      </div>
       <input
         type="range"
         name="textPriorityInput"

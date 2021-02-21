@@ -40,11 +40,17 @@ const FilterSearch = (props) => {
         </select>
       </div>
       <div className="sort">
-        <input type="radio" value="" checked={sorthValue === ''} onChange={handleChangeSort} /> Default
-        <input type="radio" value="ascending" checked={sorthValue === 'ascending'} onChange={handleChangeSort} />{' '}
-        Ascending
-        <input type="radio" value="descending" checked={sorthValue === 'descending'} onChange={handleChangeSort} />{' '}
-        Descending
+        <div className="sotItem">
+          <input type="radio" value="" checked={sorthValue === ''} onChange={handleChangeSort} /> Default
+        </div>
+        <div className="sotItem">
+          <input type="radio" value="ascending" checked={sorthValue === 'ascending'} onChange={handleChangeSort} />{' '}
+          Ascending
+        </div>
+        <div className="sotItem">
+          <input type="radio" value="descending" checked={sorthValue === 'descending'} onChange={handleChangeSort} />{' '}
+          Descending
+        </div>
       </div>
     </div>
   );
