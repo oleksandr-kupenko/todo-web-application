@@ -24,15 +24,11 @@ const TodoContainer = () => {
   const sortTodos = (todos) => {
     let todosSorted = [...todos];
     if (sorthValue === 'ascending') {
-      todosSorted.sort((a, b) =>
-        a.priority > b.priority ? 1 : b.priority > a.priority ? -1 : 0
-      );
+      todosSorted.sort((a, b) => (a.priority > b.priority ? 1 : b.priority > a.priority ? -1 : 0));
       return todosSorted;
     }
     if (sorthValue === 'descending') {
-      todosSorted.sort((a, b) =>
-        a.priority < b.priority ? 1 : b.priority < a.priority ? -1 : 0
-      );
+      todosSorted.sort((a, b) => (a.priority < b.priority ? 1 : b.priority < a.priority ? -1 : 0));
       return todosSorted;
     }
     return todos;
@@ -46,9 +42,7 @@ const TodoContainer = () => {
         todosFiltered = todos.filter((item) => item.text.includes(searchValue));
       }
       if (filterValue) {
-        todosFiltered = todosFiltered.filter(
-          (item) => +item.completed === +filterValue
-        );
+        todosFiltered = todosFiltered.filter((item) => +item.completed === +filterValue);
       }
       return todosFiltered;
     }
