@@ -7,8 +7,8 @@ This is a simple app for creating To Do list. It has the following functions:
 - adds tasks to the list;
 - highlights the task in color, depending on the priority;
 - sorts tasks by priority level;
-- allows you to mark tasks as completed;
-- allows you to filter completed and uncompleted tasks.
+- mark tasks as completed;
+- filter completed and uncompleted tasks.
 
 ## Why was this project created
 
